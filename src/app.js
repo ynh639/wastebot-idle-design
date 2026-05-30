@@ -556,6 +556,10 @@ function completionPercent() {
   return clamp(itemScore + enemyScore, 0, 100);
 }
 
+function collectionPercent() {
+  return data.items.length ? (Object.keys(state.collection.items).length / data.items.length) * 100 : 0;
+}
+
 function areaById(areaId) {
   return data.planet.areas.find((area) => area.id === areaId);
 }
@@ -1026,7 +1030,7 @@ function useConsumable(itemId) {
   }
   addEffects(state.preparedSupply.effects, item.effects ?? {});
   state.preparedSupply.names.push(item.name);
-  addLog(`装入补给：${item.name}。将在下一次探索生效。`, "good");
+  addLog(`装入补给：${item.name}（${effectText(item.effects)}）。将在下一次探索生效。`, "good");
   notify(`${item.name} 已装入下一次探索`, "good");
   save();
   render();
@@ -1152,6 +1156,41 @@ function rewardEffectText(effects = {}) {
   return Object.entries(effects)
     .map(([key, value]) => `${labels[key] ?? key} +${key.includes("Find") || key === "hiddenEvent" || key === "gatherYield" ? `${Math.round(value * 100)}%` : value}`)
     .join("、");
+}
+
+function effectText(effects = {}) {
+  const labels = {
+    maxExploreMinutes: "探索时长",
+    repairHp: "出发前维修",
+    attackPct: "攻击",
+    defensePct: "防御",
+    attack: "攻击",
+    defense: "防御",
+    cargoSlots: "货舱",
+    rareFind: "稀有发现",
+    hiddenEvent: "特殊事件",
+    anomalyFind: "异常发现",
+    gatherYield: "采集",
+    materialFind: "材料发现",
+    junkValue: "废品售价",
+    xpGain: "经验",
+    eventSafety: "安全",
+    enemyRate: "遇敌",
+    escapeChance: "撤离"
+  };
+  const percentKeys = new Set(["attackPct", "defensePct", "rareFind", "hiddenEvent", "anomalyFind", "gatherYield", "materialFind", "junkValue", "xpGain", "eventSafety", "enemyRate", "escapeChance"]);
+  const minuteKeys = new Set(["maxExploreMinutes"]);
+  const hpKeys = new Set(["repairHp"]);
+  return Object.entries(effects)
+    .map(([key, value]) => {
+      const sign = value >= 0 ? "+" : "";
+      const label = labels[key] ?? key;
+      if (percentKeys.has(key)) return `${label} ${sign}${Math.round(value * 100)}%`;
+      if (minuteKeys.has(key)) return `${label} ${sign}${Math.round(value)}分钟`;
+      if (hpKeys.has(key)) return `${label} ${sign}${Math.round(value)}耐久`;
+      return `${label} ${sign}${value}`;
+    })
+    .join("、") || "无明确效果";
 }
 
 function claimCollectionSet(setId) {
@@ -1596,7 +1635,7 @@ function renderTop() {
     statCard("等级", `Lv.${state.robot.level}`, `${fmt(state.robot.exp)} / ${fmt(expToNext())} 经验`),
     statCard("战力", fmt(robotPower()), "影响区域风险"),
     statCard("外出时长", `${Math.round(stats.exploreMinutes)} 分钟`, `测试倍率 x${state.speed}`),
-    statCard("完成度", pct(completionPercent()), `${Object.keys(state.collection.items).length}/${data.items.length} 道具`)
+    statCard("收集率", pct(collectionPercent()), `${Object.keys(state.collection.items).length}/${data.items.length} 道具`)
   ].join("");
 
   $("#runStrip").innerHTML = run
@@ -1619,8 +1658,9 @@ function renderTop() {
           <strong>待命</strong>
           <span>推荐目标：${bestArea().name}。先外出拾荒，再出售废品与升级设施。</span>
         </div>
-        ${progressBar(completionPercent(), "星球完成度")}
+        ${progressBar(collectionPercent(), "道具收集率")}
         <div class="run-metrics">
+          <span>探索进度 ${pct(completionPercent())}</span>
           <span>离线收益 ${Math.round(stats.offlineEfficiency * 100)}%</span>
           <span>上限 ${stats.offlineCapHours.toFixed(0)} 小时</span>
           <span>已解锁 ${state.unlockedAreas.length}/${data.planet.areas.length} 区域</span>
@@ -1658,6 +1698,11 @@ function renderRobotVisual() {
   `;
 }
 
+function preparedSupplyText() {
+  if (!state.preparedSupply.names.length) return "未装入补给";
+  return `${state.preparedSupply.names.join("、")}；效果：${effectText(state.preparedSupply.effects)}`;
+}
+
 function renderStation() {
   const stats = robotStats();
   return `
@@ -1682,13 +1727,7 @@ function renderStation() {
         </div>
         <label class="control-row">
           <span>时间倍率</span>
-          <div class="speed-control">
-            <select data-action="speed-preset" title="常用倍率">
-              ${[1, 10, 30, 60, 120, 300].map((speed) => `<option value="${speed}" ${state.speed === speed ? "selected" : ""}>x${speed}</option>`).join("")}
-              ${[1, 10, 30, 60, 120, 300].includes(state.speed) ? "" : `<option value="${state.speed}" selected>x${state.speed}</option>`}
-            </select>
-            <input data-action="speed-custom" type="number" min="1" max="300" step="1" value="${state.speed}" title="自定义倍率，范围 1-300" />
-          </div>
+          <input class="speed-input" data-action="speed-custom" type="number" min="1" max="300" step="1" value="${state.speed}" title="自定义倍率，范围 1-300" />
         </label>
         <div class="stat-grid compact">
           ${statCard("攻击", stats.attack)}
@@ -1698,7 +1737,7 @@ function renderStation() {
         </div>
         <div class="supply-status">
           <b>下次探索补给</b>
-          <p>${state.preparedSupply.names.length ? state.preparedSupply.names.join("、") : "未装入补给"}</p>
+          <p>${preparedSupplyText()}</p>
         </div>
         <button class="ghost full" data-action="debug-grant">加入少量测试资源</button>
       </section>
@@ -1895,7 +1934,7 @@ function itemPurpose(item) {
   if (item.category === "collectible") return "用途：收藏套装奖励/永久加成，批量出售保护";
   if (item.category === "material") return "用途：设施升级/装备合成";
   if (item.category === "equipment") return "用途：安装到机体槽位";
-  if (item.category === "consumable") return "用途：装入下一次探索";
+  if (item.category === "consumable") return `用途：装入下一次探索；效果：${effectText(item.effects)}`;
   if (item.category === "relic") return "用途：剧情收藏/完成度";
   if (item.category === "blueprint") return "用途：解锁设施或制作项";
   if (item.category === "anomaly") return "用途：特殊规则道具";
@@ -2019,10 +2058,11 @@ function renderCollection() {
   return `
     <div class="screen-grid">
       <section class="panel span-4">
-        <div class="panel-head"><h2>星球完成度</h2></div>
-        <div class="big-number">${pct(completionPercent())}</div>
-        ${progressBar(completionPercent(), "完成度")}
+        <div class="panel-head"><h2>收集率</h2></div>
+        <div class="big-number">${pct(collectionPercent())}</div>
+        ${progressBar(collectionPercent(), "收集率")}
         <p class="mini">已发现 ${foundItems} / ${data.items.length} 个道具，击败 ${defeated} / ${data.enemies.length} 种敌人。</p>
+        <p class="mini rare">探索进度：${pct(completionPercent())}。该数值按稀有物、遗物、敌人和套装权重计算，用于区域/星球条件。</p>
       </section>
       <section class="panel span-8">
         <div class="panel-head"><h2>分类进度</h2></div>
@@ -2162,7 +2202,7 @@ function bindEvents() {
     if (target) handleAction(target);
   });
   $("#view").addEventListener("change", (event) => {
-    const target = event.target.closest("[data-action='speed-preset'], [data-action='speed-custom']");
+    const target = event.target.closest("[data-action='speed-custom']");
     if (target) setSpeed(target.value);
   });
   $("#saveBtn").addEventListener("click", () => {
@@ -2363,6 +2403,13 @@ async function runClickQaTest() {
     label: "补给进入下一次探索队列",
     ok: state.preparedSupply.names.includes(supply.name),
     detail: state.preparedSupply.names.join(",")
+  });
+  activeTab = "station";
+  render();
+  results.push({
+    label: "首页显示补给具体效果",
+    ok: document.body.textContent.includes("效果：") && document.body.textContent.includes("探索时长"),
+    detail: preparedSupplyText()
   });
 
   grantFacilityCost("recycler");
