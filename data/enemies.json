@@ -1,0 +1,890 @@
+[
+  {
+    "id": "enemy_dust_tick",
+    "name": "沙尘寄生虫",
+    "planet": "rust_mother",
+    "tier": 1,
+    "hp": 28,
+    "attack": 5,
+    "defense": 1,
+    "accuracy": 0.84,
+    "dodge": 0.03,
+    "crit": 0.04,
+    "xp": 11,
+    "tags": [
+      "normal",
+      "tier_1"
+    ],
+    "battleText": {
+      "intro": "沙尘寄生虫从废墟里启动，自动战斗开始。",
+      "attack": "沙尘寄生虫发动了一次机械化攻击。",
+      "defeat": "沙尘寄生虫散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_filter_fiber",
+        "chance": 0.35,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_rubber_pad",
+        "chance": 0.5,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_scrap_mouse",
+    "name": "废铁啃食鼠",
+    "planet": "rust_mother",
+    "tier": 1,
+    "hp": 35,
+    "attack": 6,
+    "defense": 2,
+    "accuracy": 0.84,
+    "dodge": 0.03,
+    "crit": 0.04,
+    "xp": 14,
+    "tags": [
+      "normal",
+      "tier_1"
+    ],
+    "battleText": {
+      "intro": "废铁啃食鼠从废墟里启动，自动战斗开始。",
+      "attack": "废铁啃食鼠发动了一次机械化攻击。",
+      "defeat": "废铁啃食鼠散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_scrap_iron",
+        "chance": 0.35,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_micro_gear",
+        "chance": 0.5,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_broken_cleaner",
+    "name": "失控清洁机器人",
+    "planet": "rust_mother",
+    "tier": 1,
+    "hp": 42,
+    "attack": 7,
+    "defense": 2,
+    "accuracy": 0.84,
+    "dodge": 0.03,
+    "crit": 0.04,
+    "xp": 17,
+    "tags": [
+      "normal",
+      "tier_1"
+    ],
+    "battleText": {
+      "intro": "失控清洁机器人从废墟里启动，自动战斗开始。",
+      "attack": "失控清洁机器人发动了一次机械化攻击。",
+      "defeat": "失控清洁机器人散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_broken_chip",
+        "chance": 0.35,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_copper_wire",
+        "chance": 0.5,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_power_leech",
+    "name": "盗电小无人机",
+    "planet": "rust_mother",
+    "tier": 2,
+    "hp": 58,
+    "attack": 10,
+    "defense": 3,
+    "accuracy": 0.86,
+    "dodge": 0.04,
+    "crit": 0.05,
+    "xp": 25,
+    "tags": [
+      "normal",
+      "tier_2"
+    ],
+    "battleText": {
+      "intro": "盗电小无人机从废墟里启动，自动战斗开始。",
+      "attack": "盗电小无人机发动了一次机械化攻击。",
+      "defeat": "盗电小无人机散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_low_grade_battery",
+        "chance": 0.35,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "itemId": "mat_signal_copper",
+        "chance": 0.5,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_rust_hound",
+    "name": "锈皮机械犬",
+    "planet": "rust_mother",
+    "tier": 2,
+    "hp": 72,
+    "attack": 12,
+    "defense": 4,
+    "accuracy": 0.86,
+    "dodge": 0.04,
+    "crit": 0.05,
+    "xp": 33,
+    "tags": [
+      "normal",
+      "tier_2"
+    ],
+    "battleText": {
+      "intro": "锈皮机械犬从废墟里启动，自动战斗开始。",
+      "attack": "锈皮机械犬发动了一次机械化攻击。",
+      "defeat": "锈皮机械犬散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_rust_plate",
+        "chance": 0.35,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "itemId": "mat_flexible_joint",
+        "chance": 0.5,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_solar_mite",
+    "name": "太阳能啃蚀虫",
+    "planet": "rust_mother",
+    "tier": 2,
+    "hp": 65,
+    "attack": 14,
+    "defense": 2,
+    "accuracy": 0.86,
+    "dodge": 0.04,
+    "crit": 0.05,
+    "xp": 30,
+    "tags": [
+      "normal",
+      "tier_2"
+    ],
+    "battleText": {
+      "intro": "太阳能啃蚀虫从废墟里启动，自动战斗开始。",
+      "attack": "太阳能啃蚀虫发动了一次机械化攻击。",
+      "defeat": "太阳能啃蚀虫散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_solar_fragment",
+        "chance": 0.35,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "itemId": "mat_clean_lens",
+        "chance": 0.5,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_heat_mirror",
+    "name": "过热反光镜阵列",
+    "planet": "rust_mother",
+    "tier": 2,
+    "hp": 80,
+    "attack": 13,
+    "defense": 6,
+    "accuracy": 0.86,
+    "dodge": 0.04,
+    "crit": 0.05,
+    "xp": 38,
+    "tags": [
+      "normal",
+      "tier_2"
+    ],
+    "battleText": {
+      "intro": "过热反光镜阵列从废墟里启动，自动战斗开始。",
+      "attack": "过热反光镜阵列发动了一次机械化攻击。",
+      "defeat": "过热反光镜阵列散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_ceramic_piece",
+        "chance": 0.35,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "itemId": "mat_coolant_salt",
+        "chance": 0.5,
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_junk_nomad",
+    "name": "荒原拾荒者",
+    "planet": "rust_mother",
+    "tier": 3,
+    "hp": 95,
+    "attack": 17,
+    "defense": 5,
+    "accuracy": 0.8799999999999999,
+    "dodge": 0.05,
+    "crit": 0.06,
+    "xp": 49,
+    "tags": [
+      "normal",
+      "tier_3"
+    ],
+    "battleText": {
+      "intro": "荒原拾荒者从废墟里启动，自动战斗开始。",
+      "attack": "荒原拾荒者发动了一次机械化攻击。",
+      "defeat": "荒原拾荒者散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_power_cable",
+        "chance": 0.35,
+        "min": 1,
+        "max": 4
+      },
+      {
+        "itemId": "mat_servo_core",
+        "chance": 0.5,
+        "min": 1,
+        "max": 4
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_security_turret",
+    "name": "旧安保炮塔",
+    "planet": "rust_mother",
+    "tier": 3,
+    "hp": 110,
+    "attack": 20,
+    "defense": 7,
+    "accuracy": 0.8799999999999999,
+    "dodge": 0.05,
+    "crit": 0.06,
+    "xp": 57,
+    "tags": [
+      "normal",
+      "tier_3"
+    ],
+    "battleText": {
+      "intro": "旧安保炮塔从废墟里启动，自动战斗开始。",
+      "attack": "旧安保炮塔发动了一次机械化攻击。",
+      "defeat": "旧安保炮塔散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_plasma_contact",
+        "chance": 0.35,
+        "min": 1,
+        "max": 4
+      },
+      {
+        "itemId": "mat_sensor_mesh",
+        "chance": 0.5,
+        "min": 1,
+        "max": 4
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_collapsed_arm",
+    "name": "坍塌机械臂",
+    "planet": "rust_mother",
+    "tier": 3,
+    "hp": 130,
+    "attack": 22,
+    "defense": 9,
+    "accuracy": 0.8799999999999999,
+    "dodge": 0.05,
+    "crit": 0.06,
+    "xp": 65,
+    "tags": [
+      "normal",
+      "tier_3"
+    ],
+    "battleText": {
+      "intro": "坍塌机械臂从废墟里启动，自动战斗开始。",
+      "attack": "坍塌机械臂发动了一次机械化攻击。",
+      "defeat": "坍塌机械臂散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_alloy_frame",
+        "chance": 0.35,
+        "min": 1,
+        "max": 4
+      },
+      {
+        "itemId": "mat_industrial_spring",
+        "chance": 0.5,
+        "min": 1,
+        "max": 4
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_repair_spider",
+    "name": "维修蜘蛛群",
+    "planet": "rust_mother",
+    "tier": 3,
+    "hp": 105,
+    "attack": 19,
+    "defense": 4,
+    "accuracy": 0.8799999999999999,
+    "dodge": 0.05,
+    "crit": 0.06,
+    "xp": 61,
+    "tags": [
+      "normal",
+      "tier_3"
+    ],
+    "battleText": {
+      "intro": "维修蜘蛛群从废墟里启动，自动战斗开始。",
+      "attack": "维修蜘蛛群发动了一次机械化攻击。",
+      "defeat": "维修蜘蛛群散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_optic_fiber",
+        "chance": 0.35,
+        "min": 1,
+        "max": 4
+      },
+      {
+        "itemId": "mat_data_pin",
+        "chance": 0.5,
+        "min": 1,
+        "max": 4
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_pipe_serpent",
+    "name": "管道缠绕蛇",
+    "planet": "rust_mother",
+    "tier": 4,
+    "hp": 150,
+    "attack": 25,
+    "defense": 10,
+    "accuracy": 0.8999999999999999,
+    "dodge": 0.06,
+    "crit": 0.07,
+    "xp": 79,
+    "tags": [
+      "normal",
+      "tier_4"
+    ],
+    "battleText": {
+      "intro": "管道缠绕蛇从废墟里启动，自动战斗开始。",
+      "attack": "管道缠绕蛇发动了一次机械化攻击。",
+      "defeat": "管道缠绕蛇散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_pressure_valve",
+        "chance": 0.35,
+        "min": 1,
+        "max": 5
+      },
+      {
+        "itemId": "mat_lubricant_gel",
+        "chance": 0.5,
+        "min": 1,
+        "max": 5
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_maintenance_warden",
+    "name": "地下维修看守",
+    "planet": "rust_mother",
+    "tier": 4,
+    "hp": 180,
+    "attack": 29,
+    "defense": 12,
+    "accuracy": 0.8999999999999999,
+    "dodge": 0.06,
+    "crit": 0.07,
+    "xp": 95,
+    "tags": [
+      "normal",
+      "tier_4"
+    ],
+    "battleText": {
+      "intro": "地下维修看守从废墟里启动，自动战斗开始。",
+      "attack": "地下维修看守发动了一次机械化攻击。",
+      "defeat": "地下维修看守散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_drone_eye",
+        "chance": 0.35,
+        "min": 1,
+        "max": 5
+      },
+      {
+        "itemId": "mat_ion_capacitor",
+        "chance": 0.5,
+        "min": 1,
+        "max": 5
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_memory_ghost",
+    "name": "记忆噪声体",
+    "planet": "rust_mother",
+    "tier": 4,
+    "hp": 135,
+    "attack": 33,
+    "defense": 3,
+    "accuracy": 0.8999999999999999,
+    "dodge": 0.06,
+    "crit": 0.07,
+    "xp": 92,
+    "tags": [
+      "normal",
+      "tier_4"
+    ],
+    "battleText": {
+      "intro": "记忆噪声体从废墟里启动，自动战斗开始。",
+      "attack": "记忆噪声体发动了一次机械化攻击。",
+      "defeat": "记忆噪声体散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_ai_memory_chip",
+        "chance": 0.35,
+        "min": 1,
+        "max": 5
+      },
+      {
+        "itemId": "mat_storage_crystal",
+        "chance": 0.5,
+        "min": 1,
+        "max": 5
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_nanite_swarm",
+    "name": "纳米尘群",
+    "planet": "rust_mother",
+    "tier": 4,
+    "hp": 160,
+    "attack": 28,
+    "defense": 8,
+    "accuracy": 0.8999999999999999,
+    "dodge": 0.06,
+    "crit": 0.07,
+    "xp": 102,
+    "tags": [
+      "normal",
+      "tier_4"
+    ],
+    "battleText": {
+      "intro": "纳米尘群从废墟里启动，自动战斗开始。",
+      "attack": "纳米尘群发动了一次机械化攻击。",
+      "defeat": "纳米尘群散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_nanite_clump",
+        "chance": 0.35,
+        "min": 1,
+        "max": 5
+      },
+      {
+        "itemId": "mat_phase_screw",
+        "chance": 0.5,
+        "min": 1,
+        "max": 5
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_launch_guard",
+    "name": "旧时代守卫",
+    "planet": "rust_mother",
+    "tier": 5,
+    "hp": 240,
+    "attack": 38,
+    "defense": 16,
+    "accuracy": 0.9199999999999999,
+    "dodge": 0.07,
+    "crit": 0.08,
+    "xp": 149,
+    "tags": [
+      "normal",
+      "tier_5"
+    ],
+    "battleText": {
+      "intro": "旧时代守卫从废墟里启动，自动战斗开始。",
+      "attack": "旧时代守卫发动了一次机械化攻击。",
+      "defeat": "旧时代守卫散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_boss_servo",
+        "chance": 0.35,
+        "min": 1,
+        "max": 6
+      },
+      {
+        "itemId": "mat_command_key",
+        "chance": 0.5,
+        "min": 1,
+        "max": 6
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_fuel_wraith",
+    "name": "燃料井幽影",
+    "planet": "rust_mother",
+    "tier": 5,
+    "hp": 210,
+    "attack": 42,
+    "defense": 9,
+    "accuracy": 0.9199999999999999,
+    "dodge": 0.07,
+    "crit": 0.08,
+    "xp": 142,
+    "tags": [
+      "normal",
+      "tier_5"
+    ],
+    "battleText": {
+      "intro": "燃料井幽影从废墟里启动，自动战斗开始。",
+      "attack": "燃料井幽影发动了一次机械化攻击。",
+      "defeat": "燃料井幽影散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_old_fuel_cell",
+        "chance": 0.35,
+        "min": 1,
+        "max": 6
+      },
+      {
+        "itemId": "mat_gravity_coil",
+        "chance": 0.5,
+        "min": 1,
+        "max": 6
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_orbit_dog",
+    "name": "轨道猎犬残机",
+    "planet": "rust_mother",
+    "tier": 5,
+    "hp": 230,
+    "attack": 40,
+    "defense": 13,
+    "accuracy": 0.9199999999999999,
+    "dodge": 0.07,
+    "crit": 0.08,
+    "xp": 156,
+    "tags": [
+      "normal",
+      "tier_5"
+    ],
+    "battleText": {
+      "intro": "轨道猎犬残机从废墟里启动，自动战斗开始。",
+      "attack": "轨道猎犬残机发动了一次机械化攻击。",
+      "defeat": "轨道猎犬残机散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_laser_prism",
+        "chance": 0.35,
+        "min": 1,
+        "max": 6
+      },
+      {
+        "itemId": "mat_exo_shell",
+        "chance": 0.5,
+        "min": 1,
+        "max": 6
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "enemy_signal_choir",
+    "name": "合唱信号塔",
+    "planet": "rust_mother",
+    "tier": 5,
+    "hp": 260,
+    "attack": 35,
+    "defense": 18,
+    "accuracy": 0.9199999999999999,
+    "dodge": 0.07,
+    "crit": 0.08,
+    "xp": 169,
+    "tags": [
+      "normal",
+      "tier_5"
+    ],
+    "battleText": {
+      "intro": "合唱信号塔从废墟里启动，自动战斗开始。",
+      "attack": "合唱信号塔发动了一次机械化攻击。",
+      "defeat": "合唱信号塔散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "mat_star_chart_bit",
+        "chance": 0.35,
+        "min": 1,
+        "max": 6
+      },
+      {
+        "itemId": "mat_black_box_core",
+        "chance": 0.5,
+        "min": 1,
+        "max": 6
+      }
+    ],
+    "collectionPoints": 1
+  },
+  {
+    "id": "boss_station_gate",
+    "name": "补给站门禁主机",
+    "planet": "rust_mother",
+    "tier": 1,
+    "hp": 160,
+    "attack": 18,
+    "defense": 8,
+    "accuracy": 0.84,
+    "dodge": 0.03,
+    "crit": 0.04,
+    "xp": 108,
+    "tags": [
+      "boss",
+      "tier_1"
+    ],
+    "battleText": {
+      "intro": "补给站门禁主机从废墟里启动，自动战斗开始。",
+      "attack": "补给站门禁主机发动了一次机械化攻击。",
+      "defeat": "补给站门禁主机散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "bp_recycler_2",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_station_relay",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 5
+  },
+  {
+    "id": "boss_solar_overseer",
+    "name": "太阳农场监察机",
+    "planet": "rust_mother",
+    "tier": 2,
+    "hp": 260,
+    "attack": 28,
+    "defense": 12,
+    "accuracy": 0.86,
+    "dodge": 0.04,
+    "crit": 0.05,
+    "xp": 203,
+    "tags": [
+      "boss",
+      "tier_2"
+    ],
+    "battleText": {
+      "intro": "太阳农场监察机从废墟里启动，自动战斗开始。",
+      "attack": "太阳农场监察机发动了一次机械化攻击。",
+      "defeat": "太阳农场监察机散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "bp_solar_battery",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_clean_reactor_shard",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 5
+  },
+  {
+    "id": "boss_city_colossus",
+    "name": "坍塌城巨构臂",
+    "planet": "rust_mother",
+    "tier": 3,
+    "hp": 380,
+    "attack": 40,
+    "defense": 18,
+    "accuracy": 0.8799999999999999,
+    "dodge": 0.05,
+    "crit": 0.06,
+    "xp": 324,
+    "tags": [
+      "boss",
+      "tier_3"
+    ],
+    "battleText": {
+      "intro": "坍塌城巨构臂从废墟里启动，自动战斗开始。",
+      "attack": "坍塌城巨构臂发动了一次机械化攻击。",
+      "defeat": "坍塌城巨构臂散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "bp_compressed_cargo",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_adaptive_alloy",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 5
+  },
+  {
+    "id": "boss_tunnel_core",
+    "name": "地下维修中枢",
+    "planet": "rust_mother",
+    "tier": 4,
+    "hp": 520,
+    "attack": 52,
+    "defense": 24,
+    "accuracy": 0.8999999999999999,
+    "dodge": 0.06,
+    "crit": 0.07,
+    "xp": 487,
+    "tags": [
+      "boss",
+      "tier_4"
+    ],
+    "battleText": {
+      "intro": "地下维修中枢从废墟里启动，自动战斗开始。",
+      "attack": "地下维修中枢发动了一次机械化攻击。",
+      "defeat": "地下维修中枢散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "bp_navigation",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_core_cooler",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 5
+  },
+  {
+    "id": "boss_launch_sentinel",
+    "name": "旧发射场哨兵",
+    "planet": "rust_mother",
+    "tier": 5,
+    "hp": 760,
+    "attack": 70,
+    "defense": 34,
+    "accuracy": 0.9199999999999999,
+    "dodge": 0.07,
+    "crit": 0.08,
+    "xp": 810,
+    "tags": [
+      "boss",
+      "tier_5"
+    ],
+    "battleText": {
+      "intro": "旧发射场哨兵从废墟里启动，自动战斗开始。",
+      "attack": "旧发射场哨兵发动了一次机械化攻击。",
+      "defeat": "旧发射场哨兵散落成可回收零件。"
+    },
+    "dropTable": [
+      {
+        "itemId": "bp_star_drive",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      },
+      {
+        "itemId": "mat_launch_code_strip",
+        "chance": 1,
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "collectionPoints": 5
+  }
+]

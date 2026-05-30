@@ -1,0 +1,173 @@
+{
+  "id": "rust_mother",
+  "name": "锈蚀母星",
+  "theme": "第一颗废弃殖民星，覆盖锈蚀荒原、坍塌工业区和旧时代发射场。",
+  "initialExploreMinutes": 20,
+  "baseEventIntervalSeconds": {
+    "min": 5,
+    "max": 20
+  },
+  "completionRules": {
+    "itemFirstDiscovery": {
+      "junk": 0.2,
+      "material": 0.5,
+      "equipment": 1,
+      "consumable": 0.8,
+      "relic": 2,
+      "blueprint": 1.5,
+      "anomaly": 3
+    },
+    "enemyFirstDefeat": 1,
+    "bossFirstDefeat": 5,
+    "areaMilestone": 3
+  },
+  "unlockNextPlanet": {
+    "targetPlanetId": "acid_rain_mine",
+    "displayName": "酸雨矿星",
+    "conditions": [
+      {
+        "type": "planetCompletion",
+        "value": 75
+      },
+      {
+        "type": "facilityLevel",
+        "facilityId": "navigation",
+        "level": 3
+      },
+      {
+        "type": "itemOwned",
+        "itemId": "bp_star_drive"
+      }
+    ]
+  },
+  "areas": [
+    {
+      "id": "station_outskirts",
+      "name": "补给站外围",
+      "tier": 1,
+      "recommendedPower": 0,
+      "unlockCondition": {
+        "type": "default"
+      },
+      "eventWeights": {
+        "junk": 36,
+        "material": 26,
+        "enemy": 16,
+        "equipment": 6,
+        "consumable": 6,
+        "relic": 4,
+        "blueprint": 1,
+        "anomaly": 0,
+        "hazard": 4
+      }
+    },
+    {
+      "id": "rust_plain",
+      "name": "锈蚀平原",
+      "tier": 1,
+      "recommendedPower": 0,
+      "unlockCondition": {
+        "type": "facilityLevel",
+        "facilityId": "recycler",
+        "level": 1
+      },
+      "eventWeights": {
+        "junk": 36,
+        "material": 26,
+        "enemy": 16,
+        "equipment": 6,
+        "consumable": 6,
+        "relic": 4,
+        "blueprint": 1,
+        "anomaly": 0,
+        "hazard": 4
+      }
+    },
+    {
+      "id": "solar_farm",
+      "name": "废弃太阳能农场",
+      "tier": 2,
+      "recommendedPower": 120,
+      "unlockCondition": {
+        "type": "areaRuns",
+        "areaId": "rust_plain",
+        "count": 1
+      },
+      "eventWeights": {
+        "junk": 34,
+        "material": 27,
+        "enemy": 18,
+        "equipment": 7,
+        "consumable": 6,
+        "relic": 5,
+        "blueprint": 3,
+        "anomaly": 0,
+        "hazard": 5
+      }
+    },
+    {
+      "id": "collapsed_mech_city",
+      "name": "坍塌机械城",
+      "tier": 3,
+      "recommendedPower": 260,
+      "unlockCondition": {
+        "type": "bossDefeated",
+        "enemyId": "boss_station_gate"
+      },
+      "eventWeights": {
+        "junk": 32,
+        "material": 28,
+        "enemy": 20,
+        "equipment": 8,
+        "consumable": 6,
+        "relic": 6,
+        "blueprint": 3,
+        "anomaly": 2,
+        "hazard": 6
+      }
+    },
+    {
+      "id": "underground_maintenance",
+      "name": "地下维修通道",
+      "tier": 4,
+      "recommendedPower": 480,
+      "unlockCondition": {
+        "type": "planetCompletion",
+        "value": 42
+      },
+      "eventWeights": {
+        "junk": 30,
+        "material": 29,
+        "enemy": 22,
+        "equipment": 9,
+        "consumable": 6,
+        "relic": 7,
+        "blueprint": 3,
+        "anomaly": 2,
+        "hazard": 7
+      }
+    },
+    {
+      "id": "old_launch_site",
+      "name": "旧时代发射场",
+      "tier": 5,
+      "recommendedPower": 760,
+      "unlockCondition": {
+        "type": "facilityLevel",
+        "facilityId": "navigation",
+        "level": 2
+      },
+      "eventWeights": {
+        "junk": 28,
+        "material": 30,
+        "enemy": 24,
+        "equipment": 10,
+        "consumable": 6,
+        "relic": 8,
+        "blueprint": 3,
+        "anomaly": 2,
+        "hazard": 8
+      }
+    }
+  ]
+}

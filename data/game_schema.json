@@ -1,0 +1,70 @@
+{
+  "saveVersion": 1,
+  "coreLoop": [
+    "prepare",
+    "explore",
+    "event",
+    "combat_or_loot",
+    "return",
+    "sell_upgrade_collect"
+  ],
+  "playerSaveShape": {
+    "money": "number",
+    "robot": {
+      "level": "number",
+      "exp": "number",
+      "hp": "number",
+      "maxHp": "number",
+      "baseExploreMinutes": "number",
+      "cargoSlots": "number",
+      "stats": "Record<string, number>"
+    },
+    "inventory": [
+      {
+        "itemId": "string",
+        "qty": "number"
+      }
+    ],
+    "equipped": {
+      "weapon": "itemId|null",
+      "shell": "itemId|null",
+      "battery": "itemId|null",
+      "radar": "itemId|null",
+      "arm": "itemId|null",
+      "chip": "itemId|null",
+      "cargo": "itemId|null",
+      "special": "itemId|null"
+    },
+    "facilities": "Record<facilityId, level>",
+    "collection": {
+      "items": "Record<itemId, firstFoundTimestamp>",
+      "enemies": "Record<enemyId, firstDefeatedTimestamp>",
+      "planets": "Record<planetId, completionPercent>"
+    },
+    "unlockedAreas": [
+      "station_outskirts",
+      "rust_plain"
+    ],
+    "lastSaveTime": "epochMs"
+  },
+  "itemShape": {
+    "id": "string",
+    "name": "string",
+    "category": "string",
+    "rarity": "string",
+    "value": "number",
+    "stackable": "boolean",
+    "weight": "number",
+    "collectionPoints": "number",
+    "planet": "string",
+    "sourceAreas": "object",
+    "tags": "object",
+    "description": "string",
+    "effects": "object"
+  },
+  "combatFormula": {
+    "damage": "max(1, attacker.attack - defender.defense * 0.5) * random(0.85, 1.15)",
+    "turnOrder": "robot -> enemy -> status -> victoryCheck",
+    "defeatPenalty": "force_return, keep 70% loot by default, repair cost optional"
+  }
+}

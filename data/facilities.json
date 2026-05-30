@@ -1,0 +1,1161 @@
+[
+  {
+    "id": "recycler",
+    "name": "回收机",
+    "description": "提高废品售价，并解锁批量出售。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "junkValue": 0.08
+        },
+        "cost": {
+          "money": 80,
+          "materials": [
+            {
+              "itemId": "mat_scrap_iron",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_micro_gear",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "junkValue": 0.16
+        },
+        "cost": {
+          "money": 320,
+          "materials": [
+            {
+              "itemId": "mat_copper_wire",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_ceramic_piece",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "junkValue": 0.24
+        },
+        "cost": {
+          "money": 720,
+          "materials": [
+            {
+              "itemId": "mat_magnetic_bearing",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_plasma_contact",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_recycler_2"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "junkValue": 0.32
+        },
+        "cost": {
+          "money": 1280,
+          "materials": [
+            {
+              "itemId": "mat_sensor_mesh",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_ai_memory_chip",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_recycler_2"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "junkValue": 0.4
+        },
+        "cost": {
+          "money": 2000,
+          "materials": [
+            {
+              "itemId": "mat_ion_capacitor",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_laser_prism",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_recycler_2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "charger",
+    "name": "充电桩",
+    "description": "提高基础外出时长和离线结算上限。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "exploreMinutes": 35,
+          "offlineCapHours": 6
+        },
+        "cost": {
+          "money": 105,
+          "materials": [
+            {
+              "itemId": "mat_broken_chip",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_clean_lens",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "exploreMinutes": 50,
+          "offlineCapHours": 8
+        },
+        "cost": {
+          "money": 345,
+          "materials": [
+            {
+              "itemId": "mat_rubber_pad",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_coolant_salt",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "exploreMinutes": 65,
+          "offlineCapHours": 10
+        },
+        "cost": {
+          "money": 745,
+          "materials": [
+            {
+              "itemId": "mat_servo_core",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_navigation_pin",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_charger_2"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "exploreMinutes": 80,
+          "offlineCapHours": 12
+        },
+        "cost": {
+          "money": 1305,
+          "materials": [
+            {
+              "itemId": "mat_rare_earth_dust",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_launch_code_strip",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_charger_2"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "exploreMinutes": 95,
+          "offlineCapHours": 14
+        },
+        "cost": {
+          "money": 2025,
+          "materials": [
+            {
+              "itemId": "mat_old_fuel_cell",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_exo_shell",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_charger_2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "warehouse",
+    "name": "仓库",
+    "description": "提高仓库存储和货舱整理效率。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "storage": 0.08,
+          "storageSlots": 140
+        },
+        "cost": {
+          "money": 130,
+          "materials": [
+            {
+              "itemId": "mat_low_grade_battery",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_rubber_pad",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "storage": 0.16,
+          "storageSlots": 200
+        },
+        "cost": {
+          "money": 370,
+          "materials": [
+            {
+              "itemId": "mat_rust_plate",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_servo_core",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "storage": 0.24,
+          "storageSlots": 260
+        },
+        "cost": {
+          "money": 770,
+          "materials": [
+            {
+              "itemId": "mat_memory_foam",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_rare_earth_dust",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_cargo_2"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "storage": 0.32,
+          "storageSlots": 320
+        },
+        "cost": {
+          "money": 1330,
+          "materials": [
+            {
+              "itemId": "mat_adaptive_alloy",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_old_fuel_cell",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_cargo_2"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "storage": 0.4,
+          "storageSlots": 380
+        },
+        "cost": {
+          "money": 2050,
+          "materials": [
+            {
+              "itemId": "mat_nanite_clump",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_dust_glass",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_cargo_2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "workbench",
+    "name": "工作台",
+    "description": "解锁装备制作、材料合成和蓝图制作。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "crafting": 0.08
+        },
+        "cost": {
+          "money": 155,
+          "materials": [
+            {
+              "itemId": "mat_ceramic_piece",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_ceramic_piece",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "crafting": 0.16
+        },
+        "cost": {
+          "money": 395,
+          "materials": [
+            {
+              "itemId": "mat_solar_fragment",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_plasma_contact",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "crafting": 0.24
+        },
+        "cost": {
+          "money": 795,
+          "materials": [
+            {
+              "itemId": "mat_pure_silicon",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_ai_memory_chip",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_workbench_2"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "crafting": 0.32
+        },
+        "cost": {
+          "money": 1355,
+          "materials": [
+            {
+              "itemId": "mat_stabilized_crystal",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_laser_prism",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_workbench_2"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "crafting": 0.4
+        },
+        "cost": {
+          "money": 2075,
+          "materials": [
+            {
+              "itemId": "mat_emergency_beacon",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_boss_servo",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_workbench_2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "radar_tower",
+    "name": "雷达塔",
+    "description": "提高稀有物、隐藏事件和彩蛋发现率。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "rareFind": 0.08,
+          "hiddenEvent": 0.04
+        },
+        "cost": {
+          "money": 180,
+          "materials": [
+            {
+              "itemId": "mat_hardened_bolt",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_scrap_iron",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "rareFind": 0.16,
+          "hiddenEvent": 0.08
+        },
+        "cost": {
+          "money": 420,
+          "materials": [
+            {
+              "itemId": "mat_clean_lens",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_copper_wire",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "rareFind": 0.24,
+          "hiddenEvent": 0.12
+        },
+        "cost": {
+          "money": 820,
+          "materials": [
+            {
+              "itemId": "mat_industrial_spring",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_magnetic_bearing",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_radar_2"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "rareFind": 0.32,
+          "hiddenEvent": 0.16
+        },
+        "cost": {
+          "money": 1380,
+          "materials": [
+            {
+              "itemId": "mat_boss_servo",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_sensor_mesh",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_radar_2"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "rareFind": 0.4,
+          "hiddenEvent": 0.2
+        },
+        "cost": {
+          "money": 2100,
+          "materials": [
+            {
+              "itemId": "mat_radar_fin",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_acid_resin",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_radar_2"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "repair_bay",
+    "name": "维修仓",
+    "description": "降低战斗损耗，提高失败保留率。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "repair": 0.08
+        },
+        "cost": {
+          "money": 205,
+          "materials": [
+            {
+              "itemId": "mat_copper_wire",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_filter_fiber",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "repair": 0.16
+        },
+        "cost": {
+          "money": 445,
+          "materials": [
+            {
+              "itemId": "mat_magnetic_bearing",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_low_grade_battery",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "repair": 0.24
+        },
+        "cost": {
+          "money": 845,
+          "materials": [
+            {
+              "itemId": "mat_sensor_mesh",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_rad_shield",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_repair_bay"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "repair": 0.32
+        },
+        "cost": {
+          "money": 1405,
+          "materials": [
+            {
+              "itemId": "mat_ion_capacitor",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_quantum_residue",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_repair_bay"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "repair": 0.4
+        },
+        "cost": {
+          "money": 2125,
+          "materials": [
+            {
+              "itemId": "mat_command_key",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_core_cooler",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_repair_bay"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "research_terminal",
+    "name": "研究终端",
+    "description": "解析遗物，解锁永久加成。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "research": 0.08
+        },
+        "cost": {
+          "money": 230,
+          "materials": [
+            {
+              "itemId": "mat_rubber_pad",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_solar_fragment",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "research": 0.16
+        },
+        "cost": {
+          "money": 470,
+          "materials": [
+            {
+              "itemId": "mat_servo_core",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_signal_copper",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "research": 0.24
+        },
+        "cost": {
+          "money": 870,
+          "materials": [
+            {
+              "itemId": "mat_rare_earth_dust",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_fusion_slag",
+              "qty": 5
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "research": 0.32
+        },
+        "cost": {
+          "money": 1430,
+          "materials": [
+            {
+              "itemId": "mat_old_fuel_cell",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_star_chart_bit",
+              "qty": 6
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "research": 0.4
+        },
+        "cost": {
+          "money": 2150,
+          "materials": [
+            {
+              "itemId": "mat_dust_glass",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_radar_fin",
+              "qty": 7
+            }
+          ],
+          "blueprints": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "trade_beacon",
+    "name": "交易信标",
+    "description": "刷新特殊订单和流浪商人。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "trade": 0.08
+        },
+        "cost": {
+          "money": 255,
+          "materials": [
+            {
+              "itemId": "mat_rust_plate",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_copper_wire",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "trade": 0.16
+        },
+        "cost": {
+          "money": 495,
+          "materials": [
+            {
+              "itemId": "mat_memory_foam",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_magnetic_bearing",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "trade": 0.24
+        },
+        "cost": {
+          "money": 895,
+          "materials": [
+            {
+              "itemId": "mat_adaptive_alloy",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_sensor_mesh",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_trade_beacon"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "trade": 0.32
+        },
+        "cost": {
+          "money": 1455,
+          "materials": [
+            {
+              "itemId": "mat_nanite_clump",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_ion_capacitor",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_trade_beacon"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "trade": 0.4
+        },
+        "cost": {
+          "money": 2175,
+          "materials": [
+            {
+              "itemId": "mat_station_relay",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_silent_motor",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_trade_beacon"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "dispatch",
+    "name": "自动派遣台",
+    "description": "开启离线收益和重复探索。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "offline": 0.08,
+          "offlineCapHours": 8,
+          "offlineEfficiency": 0.44999999999999996
+        },
+        "cost": {
+          "money": 280,
+          "materials": [
+            {
+              "itemId": "mat_solar_fragment",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_low_grade_battery",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "offline": 0.16,
+          "offlineCapHours": 12,
+          "offlineEfficiency": 0.55
+        },
+        "cost": {
+          "money": 520,
+          "materials": [
+            {
+              "itemId": "mat_pure_silicon",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_rad_shield",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "offline": 0.24,
+          "offlineCapHours": 16,
+          "offlineEfficiency": 0.65
+        },
+        "cost": {
+          "money": 920,
+          "materials": [
+            {
+              "itemId": "mat_stabilized_crystal",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_quantum_residue",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_offline_dispatch"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "offline": 0.32,
+          "offlineCapHours": 20,
+          "offlineEfficiency": 0.75
+        },
+        "cost": {
+          "money": 1480,
+          "materials": [
+            {
+              "itemId": "mat_emergency_beacon",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_titanium_powder",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_offline_dispatch"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "offline": 0.4,
+          "offlineCapHours": 24,
+          "offlineEfficiency": 0.85
+        },
+        "cost": {
+          "money": 2200,
+          "materials": [
+            {
+              "itemId": "mat_launch_code_strip",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_black_box_core",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_offline_dispatch"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "navigation",
+    "name": "星际导航仪",
+    "description": "解锁新区域和下一颗星球。",
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "effects": {
+          "planetUnlock": 0.08
+        },
+        "cost": {
+          "money": 305,
+          "materials": [
+            {
+              "itemId": "mat_clean_lens",
+              "qty": 3
+            },
+            {
+              "itemId": "mat_signal_copper",
+              "qty": 2
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 2,
+        "effects": {
+          "planetUnlock": 0.16
+        },
+        "cost": {
+          "money": 545,
+          "materials": [
+            {
+              "itemId": "mat_scrap_iron",
+              "qty": 6
+            },
+            {
+              "itemId": "mat_fusion_slag",
+              "qty": 4
+            }
+          ],
+          "blueprints": []
+        }
+      },
+      {
+        "level": 3,
+        "effects": {
+          "planetUnlock": 0.24
+        },
+        "cost": {
+          "money": 945,
+          "materials": [
+            {
+              "itemId": "mat_data_pin",
+              "qty": 8
+            },
+            {
+              "itemId": "mat_star_chart_bit",
+              "qty": 5
+            }
+          ],
+          "blueprints": [
+            "bp_navigation"
+          ]
+        }
+      },
+      {
+        "level": 4,
+        "effects": {
+          "planetUnlock": 0.32
+        },
+        "cost": {
+          "money": 1505,
+          "materials": [
+            {
+              "itemId": "mat_pressure_valve",
+              "qty": 10
+            },
+            {
+              "itemId": "mat_industrial_spring",
+              "qty": 6
+            }
+          ],
+          "blueprints": [
+            "bp_navigation"
+          ]
+        }
+      },
+      {
+        "level": 5,
+        "effects": {
+          "planetUnlock": 0.4
+        },
+        "cost": {
+          "money": 2225,
+          "materials": [
+            {
+              "itemId": "mat_dustproof_fabric",
+              "qty": 12
+            },
+            {
+              "itemId": "mat_dustproof_fabric",
+              "qty": 7
+            }
+          ],
+          "blueprints": [
+            "bp_navigation"
+          ]
+        }
+      }
+    ]
+  }
+]

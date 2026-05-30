@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-30T07:17:36.466Z",
+  "counts": {
+    "items": 407,
+    "junk": 160,
+    "materials": 68,
+    "equipment": 54,
+    "consumables": 30,
+    "collectibles": 30,
+    "relics": 35,
+    "blueprints": 20,
+    "anomalies": 10,
+    "enemies": 24,
+    "facilities": 10,
+    "areas": 6
+  }
+}
